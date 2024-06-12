@@ -1,0 +1,641 @@
+.mainIndex, .grupofaqs, .mainContactos, .tituloFotos, .articulosInstagram, .tituloInstagram, .autor p, .autor h3, .mainAutor, .anteMenu, .header, body {
+  width: 100%;
+  height: 100%;
+}
+
+.mainIndex, .grupofaqs, .mainContactos, .tituloFotos, .articulosInstagram, .tituloInstagram, .autor p, .autor h3, .mainAutor, .anteMenu, .header, body {
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Truculenta", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: none;
+}
+
+.anteMenu {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: none;
+}
+
+@media (max-width: 600px) {
+  .anteMenu {
+    flex-direction: column;
+    margin-bottom: 5px;
+  }
+}
+.nombre {
+  font-family: "Cedarville Cursive";
+  font-style: normal;
+  text-align: center;
+  color: rgb(111, 80, 111);
+  text-shadow: 5px 2px 25px rgb(49, 48, 48);
+}
+.nombre h1 {
+  font-size: 70px;
+}
+
+@media (max-width: 400px) {
+  .nombre h1 {
+    font-size: 60px;
+  }
+}
+.subtitulo {
+  font-family: "Cedarville Cursive";
+  text-align: center;
+  font-weight: lighter;
+  color: rgb(81, 61, 112);
+  font-size: 25px;
+}
+
+.carrito {
+  font-size: 15px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.boton {
+  background-color: rgb(208, 216, 216);
+  border-radius: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+  color: rgb(81, 61, 112);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(81, 61, 112);
+}
+
+.navinicio {
+  background-color: rgb(210, 167, 194);
+  padding: 5px 10px;
+  color: white;
+  border-bottom: solid;
+  border-top: solid;
+  border-color: rgb(81, 61, 112);
+}
+.navinicio ul {
+  font-size: 20px;
+}
+
+.casaTe {
+  width: 100%;
+  max-width: 1200px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+}
+.casaTe img {
+  width: 0%;
+  border-radius: 5px;
+}
+
+.piePagina {
+  width: 100%;
+  height: 30%;
+  background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(210, 167, 194), rgb(81, 61, 112));
+  margin-top: 20px;
+  padding: 20px 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: none;
+}
+.piePagina h3 {
+  font-size: 20px;
+}
+.piePagina p {
+  font-size: 15px;
+}
+
+@media (max-width: 400px) {
+  .piePagina {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 400px) {
+  .box {
+    margin-bottom: 20px;
+  }
+}
+.redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: none;
+}
+.redes a:hover {
+  transform: scale(2, 2);
+}
+
+.mainIndex, .grupofaqs, .mainContactos, .tituloFotos, .articulosInstagram, .tituloInstagram, .autor p, .autor h3, .mainAutor, body, .header, .anteMenu {
+  width: 100%;
+  height: 100%;
+}
+
+.mainAutor {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.autor {
+  width: 95%;
+  height: 100%;
+  padding: 15px 15px 30px 15px;
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(81, 61, 112);
+  border-style: outset;
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: center;
+}
+.autor h3 {
+  text-align: right;
+  padding-right: 150px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  color: rgb(81, 61, 112);
+  font-size: 20px;
+  justify-items: baseline;
+}
+.autor img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 50%;
+  height: 30%;
+  padding: 0px 15px 5px 0;
+  justify-content: center;
+  align-items: center;
+  float: left;
+}
+.autor p {
+  font-size: 15px;
+  font-style: italic;
+  text-align: justify;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .autor h3 {
+    padding-right: 0;
+    padding-left: 30px;
+    text-align: left;
+  }
+}
+.tituloInstagram {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.articulosInstagram {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: none;
+}
+
+@media (max-width: 600px) {
+  .articulosInstagram {
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    align-items: center;
+  }
+}
+.articuloI iframe {
+  width: 200px;
+  height: 500px;
+}
+
+@media (max-width: 600px) {
+  .articuloI {
+    margin-bottom: 25px;
+  }
+}
+.tituloFotos {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  font-weight: bolder;
+  color: rgb(81, 61, 112);
+  font-size: 20px;
+  justify-content: center;
+}
+
+.textoExtra {
+  width: 95%;
+  height: 100%;
+  padding: 30px;
+  margin-top: 20px;
+  background-color: rgb(210, 167, 194);
+  border-color: rgb(81, 61, 112);
+  border-style: outset;
+}
+
+.mainIndex, .grupofaqs, .mainContactos, body, .header, .anteMenu, .mainAutor, .autor h3, .autor p, .tituloInstagram, .articulosInstagram, .tituloFotos {
+  width: 100%;
+  height: 100%;
+}
+
+.mainContactos {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: center;
+}
+
+.tituloContactos {
+  width: 95%;
+  height: 300px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  background-image: url(../assets/Entradalocal.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-shadow: 1px 1px 2px rgb(210, 167, 194);
+  color: rgb(81, 61, 112);
+}
+
+.datosFormulario {
+  width: 95%;
+  height: 100%;
+  padding: 20px;
+  margin: 30px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: none;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .datosFormulario {
+    flex-direction: column;
+    justify-items: center;
+  }
+}
+.formularioContactos {
+  width: 50%;
+  height: 100%;
+  margin-right: 100px;
+  font-size: 20px;
+}
+
+@media (max-width: 600px) {
+  .formularioContactos {
+    width: 100%;
+    height: 100%;
+    margin: 15px;
+  }
+}
+.botonContactos {
+  background-color: rgb(208, 216, 216);
+  border-radius: 5px;
+  margin-top: 10px;
+  color: rgb(81, 61, 112);
+  font-size: 15px;
+}
+
+.datosContactos {
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  font-size: 15px;
+  padding: 15px;
+  background-color: rgb(210, 167, 194);
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgb(81, 61, 112);
+}
+
+@media (max-width: 600px) {
+  .datosContactos {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+.mainIndex, .grupofaqs, body, .header, .anteMenu, .mainAutor, .autor h3, .autor p, .tituloInstagram, .articulosInstagram, .tituloFotos, .mainContactos {
+  width: 100%;
+  height: 100%;
+}
+
+.grupofaqs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: none;
+  padding: 20px;
+}
+
+@media (max-width: 600px) {
+  .grupofaqs {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.clasificacion {
+  width: 20%;
+  height: 100%;
+}
+.clasificacion h2 {
+  font-size: 20px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  color: rgb(81, 61, 112);
+}
+.clasificacion a {
+  font-size: 15px;
+  list-style-type: style none;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .clasificacion {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-bottom: solid;
+    border-color: rgb(81, 61, 112);
+    padding-bottom: 10px;
+  }
+}
+.preguntas {
+  width: 80%;
+  height: 90%;
+  float: right;
+  margin-bottom: 40px;
+}
+.preguntas h4 {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.preguntas h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  margin-top: 30px;
+  color: rgb(81, 61, 112);
+  text-align: center;
+}
+.preguntas p {
+  font-size: 12px;
+  font-style: italic;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 600px) {
+  .linksPreguntas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: none;
+  }
+}
+.mainIndex, body, .header, .anteMenu, .mainAutor, .autor h3, .autor p, .tituloInstagram, .articulosInstagram, .tituloFotos, .mainContactos, .grupofaqs {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 600px) {
+  .mainProductos {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.seleccion {
+  width: 95%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: none;
+}
+
+@media (max-width: 600px) {
+  .seleccion {
+    justify-content: center;
+    align-items: center;
+  }
+}
+.ordenarPor {
+  margin: 30px 80px 20px 0px;
+}
+
+@media (max-width: 600px) {
+  .ordenarPor {
+    margin: 30px 20px 20px 0px;
+  }
+}
+.categoriasProd {
+  margin: 30px 40px 20px 0px;
+}
+
+@media (max-width: 600px) {
+  .categoriasProd {
+    margin: 30px 0px 20px 20px;
+  }
+}
+.articulosProd {
+  width: 95%;
+  height: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: none;
+}
+.articulosProd article {
+  width: 200px;
+  margin: 50px;
+  justify-content: center;
+  text-align: center;
+}
+
+.descripcionProd {
+  margin-top: 10px;
+}
+
+.boxArticulo {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: center;
+}
+.boxArticulo img {
+  width: 200px;
+  height: 180px;
+  border: none;
+  border-radius: 5%;
+}
+.boxArticulo img:hover {
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgb(81, 61, 112);
+}
+
+.botonProductos {
+  background-color: rgb(208, 216, 216);
+  border-radius: 5px;
+  color: rgb(81, 61, 112);
+  font-size: 15px;
+}
+
+.enlaces {
+  margin-top: 30px;
+  font-size: 25px;
+  color: rgb(81, 61, 112);
+}
+
+.mainIndex {
+  flex-flow: row nowrap;
+  border-top: solid;
+  border-color: rgb(81, 61, 112);
+  display: flex;
+  flex-direction: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .mainIndex {
+    flex-flow: column;
+  }
+}
+.casaTe {
+  width: 100%;
+  max-width: 1300px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+}
+.casaTe img {
+  width: 100%;
+}
+
+.tituloArticulos {
+  width: 70%;
+  height: 100%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tituloHdos h2 {
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(81, 61, 112);
+  margin: 50px 0 20px 0;
+}
+
+.articulos {
+  width: 90%;
+  height: 100%;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .articulos {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+.card {
+  width: 30%;
+  height: 100%;
+  text-align: justify;
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+.articuloAutor {
+  width: 30%;
+  height: 80%;
+  margin: 5px 10px;
+  background-color: rgb(210, 167, 194);
+  border: solid;
+  border-color: rgb(81, 61, 112);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.articuloAutor h2 {
+  font-size: 20px;
+  color: rgb(81, 61, 112);
+  padding: 10px;
+}
+.articuloAutor img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 80%;
+  height: 60%;
+  margin: 10px 0;
+  padding: 5px;
+}
+.articuloAutor p {
+  font-size: 15px;
+  width: 80%;
+  height: 20%;
+  margin: 0 10px 5px 10px;
+  text-align: justify;
+  padding: 10px;
+}
+
+@media (max-width: 600px) {
+  .articuloAutor {
+    width: 90%;
+    margin: 10px;
+  }
+}/*# sourceMappingURL=styles.css.map */

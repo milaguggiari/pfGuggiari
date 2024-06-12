@@ -1,0 +1,83 @@
+%altoancho {
+    width: 100%;
+    height: 100%;
+}
+
+@mixin flex($display, $flexdi, $justify, $align){
+    display: $display;
+    flex-direction: $flexdi;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+.mainContactos{
+    @extend %altoancho;
+    @include flex(flex,column ,none,center );
+}
+
+.tituloContactos{
+    width: 95%;
+    height: 300px;
+    font-size: 20px;
+    text-align:center;
+    font-weight: bold;
+    background-image: url(../assets/Entradalocal.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-shadow: 1px 1px 2px nth($list:$colores, $n: 2);
+    color:nth($list:$colores, $n: 1);
+}
+
+.datosFormulario{
+    width: 95%;
+    height: 100%;
+    padding: 20px;
+    margin: 30px 0px;
+    @include flex(flex,row ,none,center );
+}
+@media (max-width:600px) {
+    .datosFormulario{
+        flex-direction:column;
+        justify-items: center;
+    }
+}
+
+.formularioContactos{
+    width: 50%;
+    height: 100%;
+    margin-right: 100px;
+    font-size: 20px;
+}
+@media (max-width:600px) {
+    .formularioContactos{
+        width: 100%;
+        height: 100%;
+        margin: 15px;
+    }
+}
+.botonContactos{
+    background-color: nth($list:$colores, $n: 3);
+    border-radius: 5px;
+    margin-top: 10px;
+    color:nth($list:$colores, $n: 1);
+    font-size: 15px;
+}
+.datosContactos{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    font-size: 15px;
+    padding: 15px;
+    background-color:nth($list:$colores, $n: 2);
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color:nth($list: $colores, $n:1 );
+}
+@media (max-width:600px) {
+    .datosContactos{
+        width: 100%;
+        margin-top: 30px;
+    }
+}

@@ -1,0 +1,132 @@
+@mixin flex($display,$flexdi,$justify, $align) {
+    display: $display;
+    flex-direction: $flexdi;
+    justify-content: $justify;
+    align-items: $align;
+}
+$colores:rgb(81, 61, 112), rgb(210, 167, 194),rgb(208, 216, 216), rgb(111, 80, 111);
+
+%altoancho {
+    width: 100%;
+    height: 100%;
+}
+
+@import "layout/base";
+@import "layout/autor";
+@import "layout/contacto";
+@import "layout/preguntas";
+@import "layout/productos";
+
+
+
+.mainI{
+    @extend %altoancho;
+    @include flex(flex,column,center,center);
+}
+.mainIndex {
+    @extend %altoancho;
+    flex-flow: row nowrap;
+    border-top: solid;
+    border-color:nth($list: $colores, $n: 1);
+    @include flex(flex,row nowrap,center,center);
+}
+@media (max-width: 600px) {
+    .mainIndex {
+        flex-flow: column;
+    }
+}
+.casaTe{
+    width: 100%;
+    max-width: 1300px;
+    min-width: 300px;
+    @include flex(flex,row ,center ,stretch );
+
+        img{
+            width: 100%;
+        }
+    }
+//Section index
+
+.tituloArticulos{
+    width: 70%;
+    height: 100%;
+    margin-top: 50px;
+    @include flex(flex,column,center,center);
+}
+.tituloHdos h2{
+    font-size: 25px;
+    text-align: center;
+    font-weight:bold;
+    color:nth($list:$colores, $n: 1);
+    margin: 50px 0 20px 0;
+}
+
+.articulos {
+    width: 90%;
+    height: 100%;
+    margin:10px;
+    @include flex(flex,row ,space-between ,center );
+}
+
+@media (max-width: 600px) {
+    .articulos {
+        flex-direction: column;
+        justify-content:space-around;
+    }
+}
+
+.card{
+    width: 30%;
+    height: 100%;
+    text-align: justify;
+}
+
+@media (max-width: 600px) {
+    .card{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+//Articulo autor Index
+
+.articuloAutor {
+    width: 30%;
+    height: 80%;
+    margin: 5px 10px;
+    background-color: nth($list:$colores, $n: 2);
+    border: solid;
+    border-color: nth($list:$colores, $n: 1);
+    @include flex(flex,column ,center ,center );
+
+        h2{
+            font-size: 20px;
+            color:nth($list:$colores, $n: 1);
+            padding: 10px;
+        }
+        img{
+            object-fit: cover;
+            width: 80% ;
+            height: 60%;
+            margin: 10px 0;
+            padding: 5px;
+        }
+        p{
+            font-size: 15px;
+            width: 80%;
+            height: 20%;
+            margin: 0 10px 5px 10px;
+            text-align:justify;
+            padding: 10px;
+        }
+    }
+
+@media (max-width: 600px) {
+    .articuloAutor {
+        width: 90%;
+        margin: 10px;
+    }
+}
+
+
+

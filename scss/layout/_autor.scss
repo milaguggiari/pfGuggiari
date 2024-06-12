@@ -1,0 +1,108 @@
+%altoancho {
+    width: 100%;
+    height: 100%;
+}
+
+@mixin flex($display, $flexdi, $justify, $align){
+    display: $display;
+    flex-direction: $flexdi;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+.mainAutor{
+    @extend %altoancho;
+    margin-top: 20px;
+    @include flex(flex,column ,center ,center );
+}
+.autor {
+    width: 95%;
+    height: 100%;
+    padding: 15px 15px 30px 15px;
+    background-color: rgb(255, 255, 255);
+    border-color: nth($list:$colores, $n: 1);
+    border-style: outset;
+    @include flex(flex,column,none,center );
+
+            h3{
+                @extend %altoancho;
+                text-align:right;
+                padding-right: 150px;
+                padding-top: 10px;
+                padding-bottom: 15px;
+                font-weight:bold;
+                color:nth($list:$colores, $n: 1);
+                font-size: 30px;
+                justify-items: baseline;
+            }
+            img {
+                object-fit:contain;
+                width: 50% ;
+                height: 30%;
+                padding: 0px 15px 5px 0;
+                justify-content: center;
+                align-items:center;
+                float: left;
+            }
+            p{
+                @extend %altoancho;
+                padding: 5px 15px;
+                font-size: 20px;
+                font-style: italic;
+                text-align:justify;
+                align-items: center;
+            }
+        }
+
+@media (max-width: 600px) {
+    .autor h3{
+        padding-right: 30px;
+        padding-left: 20px;
+        text-align: left;
+    }
+}
+
+.tituloInstagram{
+    @extend %altoancho;
+    margin-top: 20px;
+    @include flex(flex,column ,center,center);
+}
+.articulosInstagram {
+    @extend %altoancho;
+    @include flex(flex,row ,space-around, none);
+}
+@media (max-width:600px) {
+    .articulosInstagram {
+        @include flex(flex,column ,none, center);
+    }
+}
+
+.articuloI iframe{
+    width: 200px;
+    height: 500px;
+}
+@media (max-width:600px) {
+    .articuloI{
+        margin-bottom: 25px;
+    }  
+}
+
+.tituloFotos{
+    @extend %altoancho;
+    text-align:center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-weight:bolder;
+    color:nth($list:$colores, $n: 1);
+    font-size: 20px;
+    justify-content:center;
+}
+.textoExtra{
+    width: 95%;
+    height: 100%;
+    padding: 30px;
+    margin-top: 20px;
+    background-color: nth($list:$colores, $n: 2);
+    border-color: nth($list:$colores, $n: 1);
+    border-style: outset;
+}

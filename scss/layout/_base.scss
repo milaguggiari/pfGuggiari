@@ -1,0 +1,170 @@
+@mixin flex($display, $flexdi, $justify, $align){
+    display: $display;
+    flex-direction: $flexdi;
+    justify-content: $justify;
+    align-items: $align;
+}
+%altoancho {
+    width: 100%;
+    height: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    @extend %altoancho;
+    font-family: "Truculenta", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:normal;
+    font-style:normal;
+    font-variation-settings:"wdth" 100;
+}
+// Inicio de header
+
+.header{
+    @extend %altoancho;
+    @include flex(flex,column ,none ,none );
+}
+.anteMenu{
+    @extend %altoancho;
+    margin: 10px 0;
+    padding: 0 20px;
+    @include flex(flex,row ,space-around ,center );
+}
+
+@media (max-width: 600px){
+    .anteMenu{
+        flex-direction: column;
+        margin-bottom: 5px;
+    }
+}
+
+
+.nombre{
+    font-family: "Cedarville Cursive";
+    font-style: normal;
+    text-align:center;
+    color:nth($list:$colores, $n: 4);
+    text-shadow: 5px 2px 25px rgb(49, 48, 48);
+    
+        h1{
+            font-size: 70px;
+        }
+    }
+
+@media (max-width: 400px) {
+    .nombre h1{
+        font-size: 60px;
+        text-align: center;
+    }
+}
+
+.subtitulo {
+    font-family: "Cedarville Cursive";
+    text-align:center;
+    font-weight: lighter;
+    color:nth($list:$colores, $n: 1);
+    font-size: 25px;
+}
+
+.carrito{
+    width: 20%;
+    font-size: 15px;
+    margin-top: 30px;
+    text-align: center;
+}
+.boton{
+    background-color: nth($list:$colores, $n: 3);
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    color:nth($list:$colores, $n: 1);
+}
+a{
+    text-decoration: none;
+    color:nth($list:$colores, $n: 1);
+}
+
+.navinicio{
+    background-color:nth($list:$colores, $n: 2) ;
+    padding: 5px 10px;
+    color: white;
+    border-bottom: solid;
+    border-top: solid;
+    border-color:nth($list:$colores, $n: 1);
+
+        ul{
+            font-size: 20px;
+        }
+    }
+.textoExtra{
+    width: 95%;
+    height: 100%;
+    padding: 30px;
+    margin: 0 50px;
+    background-color: nth($list:$colores, $n: 2);
+    border-color: nth($list:$colores, $n: 1);
+    border-style: outset;
+    box-shadow: 5px 5px 20px rgb(81, 61, 112);
+    @include flex(flex,row,space-around,center );
+        div{
+            @include flex(flex,column,center,center );
+            h4{
+                font-size: 20px;
+            }
+            ion-icon{
+                font-size: 30px;
+            }
+        }
+}
+@media(max-width:600px){
+    .textoExtra{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+//footer
+
+.piePagina { 
+    width: 100%;
+    height: 30%;
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255) ,rgb(210, 167, 194),rgb(81, 61, 112));
+    //background-color:nth($list:$colores, $n: 2);
+    margin-top: 20px;
+    padding: 20px 5px ;
+    text-align: center;
+    @include flex(flex,row ,space-around ,none );
+        h3{
+            font-size: 20px;
+        }
+
+        p{
+            font-size: 15px;
+        }
+    }
+
+@media (max-width: 400px) {
+    .piePagina { 
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 400px) {
+    .box { 
+        margin-bottom: 20px;
+    }
+}
+
+.redes{
+    @include flex(flex,row ,space-evenly ,none );
+
+    a:hover{
+        transform: scale(2,2);
+    }
+}
