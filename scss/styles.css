@@ -526,7 +526,6 @@ a {
 }
 
 .mainIndex {
-  flex-flow: row nowrap;
   border-top: solid;
   border-color: rgb(81, 61, 112);
   display: flex;

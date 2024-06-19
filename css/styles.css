@@ -236,7 +236,7 @@ a {
   }
 }
 .tituloInstagram {
-  margin-top: 20px;
+  margin: 30px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -276,16 +276,6 @@ a {
   color: rgb(81, 61, 112);
   font-size: 20px;
   justify-content: center;
-}
-
-.textoExtra {
-  width: 95%;
-  height: 100%;
-  padding: 30px;
-  margin-top: 20px;
-  background-color: rgb(210, 167, 194);
-  border-color: rgb(81, 61, 112);
-  border-style: outset;
 }
 
 .mainIndex, .mainI, .grupofaqs, .mainPre, .mainContactos, body, .header, .anteMenu, .mainAutor, .autor h3, .autor p, .tituloInstagram, .articulosInstagram, .tituloFotos {
@@ -390,6 +380,7 @@ a {
   justify-content: center;
   align-items: none;
   padding: 20px;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 600px) {
@@ -519,6 +510,7 @@ a {
   width: 95%;
   height: 100%;
   flex-wrap: wrap;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -575,9 +567,7 @@ a {
 }
 
 .mainIndex {
-  flex-flow: row nowrap;
-  border-top: solid;
-  border-color: rgb(81, 61, 112);
+  margin: 50px 0;
   display: flex;
   flex-direction: row nowrap;
   justify-content: center;
@@ -593,6 +583,8 @@ a {
   width: 100%;
   max-width: 1300px;
   min-width: 300px;
+  border-bottom: solid;
+  border-color: rgb(81, 61, 112);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -605,19 +597,17 @@ a {
 .tituloArticulos {
   width: 70%;
   height: 100%;
-  margin-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.tituloHdos h2 {
+.titulodos {
   font-size: 25px;
   text-align: center;
-  font-weight: bold;
+  margin-bottom: 30px;
   color: rgb(81, 61, 112);
-  margin: 50px 0 20px 0;
 }
 
 .articulos {
@@ -627,7 +617,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: end;
 }
 
 @media (max-width: 600px) {
@@ -637,9 +627,12 @@ a {
   }
 }
 .card {
-  width: 30%;
-  height: 100%;
+  width: 235px;
+  height: 315px;
   text-align: justify;
+}
+.card img {
+  height: 132px;
 }
 
 @media (max-width: 600px) {
@@ -648,10 +641,20 @@ a {
     margin-bottom: 30px;
   }
 }
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body a {
+  position: static;
+  align-items: end;
+}
+
 .articuloAutor {
   width: 30%;
   height: 80%;
-  margin: 5px 10px;
+  margin: 0 30px 0 10px;
   background-color: rgb(210, 167, 194);
   border: solid;
   border-color: rgb(81, 61, 112);
@@ -661,7 +664,7 @@ a {
   align-items: center;
 }
 .articuloAutor h2 {
-  font-size: 20px;
+  font-size: 25px;
   color: rgb(81, 61, 112);
   padding: 10px;
 }
@@ -669,7 +672,7 @@ a {
   object-fit: cover;
   width: 80%;
   height: 60%;
-  margin: 10px 0;
+  margin: 5px 0;
   padding: 5px;
 }
 .articuloAutor p {
