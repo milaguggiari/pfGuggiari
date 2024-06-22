@@ -18,7 +18,7 @@
 .tituloContactos{
     width: 95%;
     height: 300px;
-    font-size: 20px;
+    font-size: 30px;
     text-align:center;
     font-weight: bold;
     background-image: url(../assets/Entradalocal.jpg);
@@ -27,6 +27,10 @@
     background-position: center;
     text-shadow: 1px 1px 2px nth($list:$colores, $n: 2);
     color:nth($list:$colores, $n: 1);
+        h2{
+            padding-top: 120px;
+            text-shadow: 5px 2px 30px rgb(255, 255, 255);
+        }
 }
 
 .datosFormulario{

@@ -30,12 +30,12 @@ body {
 }
 
 .anteMenu {
-  margin: 10px 0;
-  padding: 0 20px;
+  padding: 30px 20px 50px 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  background-image: linear-gradient(to top, rgb(255, 255, 255), rgb(255, 255, 255), rgb(210, 167, 194), rgb(111, 80, 111));
 }
 
 @media (max-width: 600px) {
@@ -48,8 +48,8 @@ body {
   font-family: "Cedarville Cursive";
   font-style: normal;
   text-align: center;
-  color: rgb(111, 80, 111);
-  text-shadow: 5px 2px 25px rgb(49, 48, 48);
+  color: rgb(81, 61, 112);
+  text-shadow: 5px 2px 30px rgb(255, 255, 255);
 }
 .nombre h1 {
   font-size: 70px;
@@ -76,8 +76,14 @@ body {
   text-align: center;
 }
 
+@media (max-width: 600px) {
+  .carrito {
+    width: 100%;
+  }
+}
 .boton {
   background-color: rgb(208, 216, 216);
+  box-shadow: 5px 8px 40px rgb(255, 255, 255);
   border-radius: 5px;
   margin-bottom: 5px;
   padding: 5px;
@@ -139,8 +145,8 @@ a {
 .piePagina {
   width: 100%;
   height: 30%;
-  background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(210, 167, 194), rgb(81, 61, 112));
-  margin-top: 20px;
+  background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(210, 167, 194), rgb(111, 80, 111));
+  margin-top: 50px;
   padding: 20px 5px;
   text-align: center;
   display: flex;
@@ -293,7 +299,7 @@ a {
 .tituloContactos {
   width: 95%;
   height: 300px;
-  font-size: 20px;
+  font-size: 30px;
   text-align: center;
   font-weight: bold;
   background-image: url(../assets/Entradalocal.jpg);
@@ -302,6 +308,10 @@ a {
   background-position: center;
   text-shadow: 1px 1px 2px rgb(210, 167, 194);
   color: rgb(81, 61, 112);
+}
+.tituloContactos h2 {
+  padding-top: 120px;
+  text-shadow: 5px 2px 30px rgb(255, 255, 255);
 }
 
 .datosFormulario {
@@ -379,7 +389,7 @@ a {
   flex-direction: row;
   justify-content: center;
   align-items: none;
-  padding: 20px;
+  padding: 50px 20px;
   margin-bottom: 20px;
 }
 
@@ -392,6 +402,7 @@ a {
 .clasificacion {
   width: 20%;
   height: 100%;
+  padding-right: 20px;
 }
 .clasificacion h2 {
   font-size: 25px;
@@ -420,6 +431,7 @@ a {
   height: 90%;
   float: right;
   margin-bottom: 40px;
+  padding-left: 20px;
   border-left: solid;
   border-color: rgb(81, 61, 112);
 }
@@ -430,8 +442,8 @@ a {
 }
 .preguntas h3 {
   font-size: 25px;
-  margin-bottom: 15px;
-  margin-top: 30px;
+  margin-bottom: 50px;
+  margin-top: 50px;
   color: rgb(81, 61, 112);
   text-align: center;
 }
@@ -510,7 +522,7 @@ a {
   width: 95%;
   height: 100%;
   flex-wrap: wrap;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   display: flex;
   flex-direction: row;
   justify-content: center;
